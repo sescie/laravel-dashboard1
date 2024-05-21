@@ -1,0 +1,674 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html, body{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .desk-page-container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 55px 30px  55px 1fr 55px;
+  
+  }
+  
+  .dash-container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 240px 1fr;
+  
+  }
+  
+  
+  
+  
+  @media (min-width: 700px){
+  
+    .mobile-view-container{
+        display: none;
+    }
+    .nav-bar{
+      width: 100%;
+      height: 100%;
+      background-color: #F97300;
+    }
+    .nav-items{
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      padding: 10px;
+    }
+    .logo{
+      font-size: xx-large;
+      font-weight: 900;
+      font-style: italic;
+    }
+  
+    .under-nav-section{
+      background-color: #DDDDDD;
+      color: gray;
+      padding-left: 10px;
+      padding-top: 5px;
+      border-bottom: 1px solid #B4B4B8;
+    }
+    .upper-menu-section{
+      
+    }
+    .upper-menu-section{
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #B4B4B8;
+      
+    }
+  
+  
+    .upper-left-menu-items{
+      height: 100%;
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      background-color: #DDDDDD;
+      padding-left: 10px;
+      padding-top: 15px;
+      padding-right: 10px;
+      color: rgb(48, 47, 47) ;
+    }
+  
+    .upper-right-menu-items{
+      height: 60%;
+      list-style: none;
+      display: flex;
+      padding-right: 15px;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .search-input{
+      border: 1px solid #B4B4B8;
+      border-right: none;
+      padding: 7px;
+      
+    }
+    .search-button{
+      color: white;
+      background-color: rgb(26, 117, 232);
+      padding-right: 30px;
+      padding-left: 30px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+  
+  
+    .side-menu-section{
+      padding-left: 10px;
+      padding-top: 35px;
+    }
+    
+    .side-menu-headings{
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+  
+  
+  
+    .side-menu-items{
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: small;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #B4B4B8;
+    }
+  
+    .main-dash-container{
+      padding-left: 10px;
+      padding-top: 35px;
+  
+  
+    }
+    .visualization-section{
+      display: flex;
+      flex-direction: row;
+      gap: 5px;
+    }
+  
+  
+    .energy-consumption-heading{
+      width: 100%;
+      border-bottom: 1px solid #B4B4B8;
+      padding-bottom: 15px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      justify-content: baseline;
+    }
+    .filters{
+      border-style: none;
+    }
+    .energy-summary-sub-headings{
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      font-size: small;
+      color: gray;
+    }
+  
+  
+    .summary-data{
+      display: flex;
+      gap: 30px;
+    }
+  
+    .summary-kWh{
+      font-size: small;
+    }
+  
+  
+    .data-item{
+      display: flex;
+      flex-direction: column;
+      padding-top: 10px;
+    }
+  
+    .energy-summary-sub-data{
+      list-style: none;
+      display: flex;
+      gap: 60px;
+      font-size: small;
+      align-items: center;
+    }
+  
+    .summary-sub-heading{
+      color: gray;
+      font-weight: 500;
+    }
+    .summary-kWh{
+      padding-top: 10px;
+    }
+  
+    .energy-summary{
+      background-color: white;
+      padding: 15px;
+      border-radius: 10px;
+  
+    }
+  
+    .visualization-detail-section{
+      padding-top: 20px;
+      gap: 30px;
+      display: flex;
+    }
+    .graph-section{
+      border-radius: 10px;
+      background-color: white;
+      padding: 15px;
+  
+    }
+    .graph-images{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 10px;
+      gap: 5px;
+     
+    }
+    Image{
+      border-radius: 8px;
+    }
+  
+    .table-container{
+      border-radius: 10px;
+      padding-right: 20px;
+    }
+    table{
+      /* border: 2px solid gray; */
+      padding: 10px;
+      border-collapse: collapse;
+      background-color: white;
+      border-radius: 10px;
+      width: 100%;
+    }
+    .details-table{
+      padding-top: 15px;
+      padding-right: 20px;
+      
+  
+    }
+    th, td {
+      /* border: 1px solid gray; */
+      
+      text-align: left;
+      margin: 0px;
+    }
+    .table-heading{
+      width: 100%;
+      padding: 15px;
+  
+    }
+    th{
+      background-color: #DDDDDD;
+      
+      padding: 10px;
+     }
+    
+     td{
+     }
+    
+     tr{
+      background-color: white;
+      
+    
+      /* border-bottom: 1px solid gray; */
+    
+     }
+     tr:nth-child(odd) {
+      background-color: #DDDDDD;
+      color: gray;
+    
+     }
+  
+  
+    .dash-container{
+      background-color: #DDDDDD;
+    }
+    .side-menu-section{
+      
+    }
+    .main-analysis-section{
+      
+    }
+
+    .report-container{
+      padding-left: 10px;
+      padding-top: 35px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .report-head{
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .report-scope{
+      font-weight: bold;
+    }
+    .profit-or-loss-container{
+      text-transform:capitalize;
+    }
+
+    .graphs-section{
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      align-items: center;
+
+    }
+    .daily-usage-container{
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      background-color: white;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    .graph-header{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      
+
+    }
+    .daily-usage-graph{
+      font: bold;
+    }
+    .peak-usage-map-container{
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      background-color: white;
+      padding: 15px;
+      border-radius: 8px; 
+    }
+    .peak-usage-map{
+
+    }
+
+    .most-used-appliances-container{
+
+    }
+
+    .appliance-name{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+
+  .appliance-container{
+    padding-left: 10px;
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .appliances{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 30%;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 4px;
+    gap: 15px;
+  }
+  .appliance-actn-btns{
+    display: flex;
+    border-style: none;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .appliance-on-btn{
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    padding: 8px 15px;
+    border-style: none;
+  }
+  .appliance-off-btn{
+    color: white;
+    background-color: maroon;
+    border-radius: 5px;
+    padding: 8px 15px;
+    border-style: none;
+
+  }
+  .appliance-btn{
+    border-radius: 5px;
+    padding: 5px 20px;
+  }
+.create-appliances-form{
+
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+  .input-from{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 5px;
+  }
+  .create-appliances-label-form{
+
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 5px;
+
+  }
+  .app-actn-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 50%;
+  }
+  .add-aplnc-btn{
+    border-style: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+     background-color: green;
+     color: grey;
+     background-color: white;
+     border: 1px solid grey;
+  }
+
+
+
+
+   
+  
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    footer{
+      
+    }
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    .desk-left-section{
+    width: 100%;
+    height: 100%;
+    grid-row: 1/5; 
+    grid-column: 1/1;
+    background-color: whitesmoke;
+    border-right: 1px solid gray;
+  
+  }
+  .co-name{
+    width: 100%;
+    height: 55px;
+    background-color:  #212529;
+    color: white;
+    padding: 20px;
+  }
+  .desk-dash-menu-items{
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .top-nav{
+    width: 100%;
+    height: 100%;
+    grid-row: 1/1; 
+    grid-column: 2/3;
+    background-color: #343a40;
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .share-button{
+    background-color: #1D24CA;
+    color: white
+  }
+  .export-button{
+    background-color: #1D24CA;
+    color: white
+  }
+  
+  .top-nav-search{
+    
+    background-color: #343a40;
+    padding: 15px;
+    border-style: none;
+  }
+  .sign-out-button{
+    
+    background-color:  #212529;
+    color: #595d61;
+    border-style: none;
+    padding: 20px 20px;
+  }
+  .top-dash-nav{
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    grid-row: 2/3; 
+    grid-column: 2/3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+  
+  }
+  
+  button{
+    padding: 10px 10px;
+    border: 1px solid gray;
+    color: gray;
+  }
+  .share-button{
+    border-right: 0px;
+  }
+  
+  .dash-actions{
+    display: flex;
+  }
+  
+  .graph-section{
+    width: 100%;
+    height: 100%;
+    grid-row: 3/4; 
+    grid-column: 2/3;
+    
+  }
+  .footer{
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    grid-row: 4/5; 
+    grid-column: 2/3;
+    float: right;
+    border-top: 1px solid #212529;
+    padding: 20px;
+    float: right;
+  
+  }
+  
+  
+  }
+  
+  @media (max-width: 700px){
+    .desktop-view-container{
+        display: none;
+    }
+    .mobile-view-container{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 40px 80px 1fr 40px;
+    }
+  
+    .mobile-top-nav{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #212529;
+        color: aliceblue;
+        padding: 20px;
+  
+    }
+  
+    .right-side-buttons{
+        display: flex;
+        gap: 3px;
+    }
+  
+    .mobile-menu-button{
+        border-style: none;
+        background-color: #212529;
+        padding: 20px;
+        color: aliceblue;
+    }
+    .mobile-signout-button{
+        border-style: none;
+        background-color: #212529;
+        padding: 20px;
+        color: aliceblue;
+    }
+  
+    .mobile-search-input{
+        background-color: #343a40;
+        padding: 20px;
+        border-style: none;
+    }
+  .mobile-dashboard-nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #343a40;
+  }
+  button{
+    padding: 10px 10px;
+    border: 1px solid gray;
+    color: gray;
+  }
+  .share-button{
+    border-right: 0px;
+  }
+  
+  .dash-actions{
+    display: flex;
+  }
+  
+  
+    .footer{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        float: right;
+    }
+  
+  }
+  
+  
+  
